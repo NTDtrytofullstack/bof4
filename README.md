@@ -23,7 +23,7 @@
 - tiếp đấy ta cần chuyền địa chỉ có thể nhập chuỗi vào rdi và để có thể nhập đc chuỗi ta gọi **gets** 1 lần nữa để có thể nhập đc chuỗi,  ta lại tiếp tục lặp lại vòng payload đầu để có thể nhập chuỗi **/bin/sh** vào rdi , tiếp đến là nhập vào đủ các đk còn thiếu như rsi , rdx , rax. Với giá trị rdx, rsi = 0 hay **null**
 - Nhưng hãy xem lại ảnh có chứa địa chỉ của rdx ta có thể thấy 1 dòng kế bên là ** add rsp, 0x28** ở đây nó sẽ thêm dữ liệu vào là 0x28 byte vì vậy ta phải cộng thêm để tránh trường hợp bị sai dữ liệu.
 ![image](https://user-images.githubusercontent.com/130078745/234646009-d0267dd2-0195-458f-92e7-c50b691597ef.png)
-- Chạy thử chương trình thì đã thu đc shell
+- Chạy thử chương trình thì đã thu đc shell.
 ![image](https://user-images.githubusercontent.com/130078745/234646566-9d1d932e-8909-4025-ba1d-6a92922d2b0d.png)
 
 
